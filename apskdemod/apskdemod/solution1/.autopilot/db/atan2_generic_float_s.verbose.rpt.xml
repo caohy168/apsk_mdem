@@ -1,0 +1,508 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'atan2_generic_float_s'" level="0">
+<item name = "Date">Sun Jul  4 23:20:10 2021
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Project">apskdemod</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu37p-fsvh2892-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.164 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">9, 9, 90.000 ns, 90.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="trunc_ln657_8_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_348">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_1_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_355">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_4_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_363">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_7_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_371">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_12_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_378">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_15_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_386">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_18_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_394">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_21_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_402">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_24_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_410">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_27_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_417">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_30_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_425">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_33_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_433">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_36_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_441">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_39_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_449">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_42_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_456">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_45_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_464">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_48_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_472">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_51_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_480">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_54_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_488">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_57_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_495">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_60_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_503">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_63_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_511">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_66_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_519">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_69_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_527">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_72_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_534">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_75_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_542">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_78_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_550">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_81_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_558">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_84_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_566">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_87_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_573">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_90_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_581">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_93_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_589">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_96_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_597">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_99_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_605">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_102_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_612">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_105_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_620">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_108_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_628">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_111_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_636">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_114_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_644">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_117_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_651">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_119_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_659">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_667">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_s_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_674">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_3_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_682">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_6_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_690">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_11_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_697">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_14_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_705">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_17_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_713">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_20_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_721">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_23_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_729">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_26_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_736">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_29_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_744">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_32_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_752">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_35_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_760">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_38_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_768">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_41_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_775">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_44_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_783">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_47_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_791">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_50_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_799">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_53_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_807">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_56_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_814">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_59_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_822">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_62_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_830">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_65_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_838">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_68_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_846">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_71_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_853">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_74_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_861">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_77_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_869">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_80_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_877">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_83_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_885">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_86_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_892">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_89_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_900">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_92_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_908">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_95_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_916">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_98_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_924">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_101_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_931">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_104_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_939">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_107_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_947">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_110_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_955">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_113_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_963">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_116_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_970">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_9_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_978">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_2_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_987">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_5_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_996">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_10_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1005">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_13_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1014">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_16_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1023">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_19_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1032">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_22_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1040">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_25_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1049">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_28_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1058">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_31_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1067">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_34_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1076">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_37_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1085">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_40_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1093">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_43_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1102">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_46_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1111">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_49_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1120">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_52_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1129">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_55_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1138">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_58_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1146">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_61_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1155">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_64_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1164">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_67_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1173">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_70_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1182">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_73_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1190">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_76_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1199">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_79_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1208">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_82_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1217">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_85_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1226">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_88_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1234">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_91_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1243">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_94_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1252">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_97_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1261">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_100_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1270">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_103_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1278">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_106_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1287">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_109_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1296">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_112_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1305">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_115_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1314">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_118_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1322">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_120_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1331">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="trunc_ln657_121_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1340">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 1576, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 17211, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 36, -</column>
+<column name="Register">-, -, 1897, 64, -</column>
+<specialColumn name="Available SLR">1344, 3008, 869120, 434560, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, 4, 0</specialColumn>
+<specialColumn name="Available">4032, 9024, 2607360, 1303680, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="trunc_ln657_9_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_978">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_2_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_987">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_5_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_996">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_10_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1005">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_13_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1014">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_16_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1023">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_19_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1032">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_22_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1040">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_25_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1049">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_28_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1058">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_31_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1067">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_34_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1076">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_37_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1085">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_40_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1093">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_43_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1102">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_46_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1111">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_49_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1120">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_52_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1129">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_55_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1138">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_58_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1146">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_61_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1155">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_64_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1164">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_67_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1173">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_70_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1182">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_73_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1190">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_76_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1199">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_79_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1208">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_82_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1217">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_85_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1226">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_88_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1234">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_91_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1243">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_94_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1252">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_97_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1261">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_100_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1270">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_103_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1278">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_106_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1287">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_109_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1296">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_112_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1305">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_115_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1314">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_118_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1322">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_120_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1331">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln657_121_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1340">addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s, 0, 0, 0, 134, 0</column>
+<column name="trunc_ln_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_667">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_s_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_674">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_3_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_682">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_6_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_690">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_11_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_697">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_14_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_705">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_17_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_713">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_20_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_721">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_23_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_729">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_26_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_736">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_29_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_744">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_32_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_752">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_35_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_760">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_38_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_768">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_41_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_775">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_44_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_783">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_47_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_791">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_50_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_799">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_53_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_807">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_56_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_814">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_59_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_822">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_62_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_830">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_65_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_838">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_68_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_846">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_71_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_853">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_74_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_861">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_77_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_869">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_80_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_877">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_83_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_885">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_86_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_892">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_89_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_900">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_92_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_908">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_95_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_916">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_98_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_924">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_101_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_931">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_104_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_939">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_107_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_947">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_110_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_955">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_113_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_963">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_116_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_970">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_8_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_348">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_1_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_355">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_4_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_363">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_7_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_371">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_12_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_378">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_15_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_386">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_18_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_394">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_21_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_402">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_24_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_410">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_27_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_417">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_30_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_425">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_33_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_433">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_36_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_441">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_39_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_449">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_42_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_456">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_45_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_464">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_48_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_472">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_51_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_480">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_54_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_488">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_57_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_495">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_60_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_503">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_63_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_511">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_66_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_519">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_69_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_527">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_72_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_534">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_75_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_542">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_78_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_550">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_81_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_558">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_84_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_566">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_87_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_573">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_90_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_581">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_93_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_589">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_96_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_597">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_99_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_605">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_102_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_612">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_105_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_620">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_108_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_628">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_111_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_636">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_114_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_644">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_117_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_651">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="trunc_ln657_119_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s_fu_659">addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s, 0, 0, 0, 143, 0</column>
+<column name="fdiv_32ns_32ns_32_6_no_dsp_1_U53">fdiv_32ns_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln908_fu_3552_p2">+, 0, 0, 39, 32, 6</column>
+<column name="add_ln918_fu_3638_p2">+, 0, 0, 19, 8, 8</column>
+<column name="lsb_index_fu_3424_p2">+, 0, 0, 39, 32, 6</column>
+<column name="m_1_fu_3592_p2">+, 0, 0, 48, 41, 41</column>
+<column name="ret_fu_1387_p2">+, 0, 0, 16, 9, 4</column>
+<column name="ret_6_fu_1409_p2">-, 0, 0, 16, 9, 9</column>
+<column name="sub_ln1321_fu_1465_p2">-, 0, 0, 16, 1, 9</column>
+<column name="sub_ln898_fu_3418_p2">-, 0, 0, 39, 6, 32</column>
+<column name="sub_ln901_fu_3450_p2">-, 0, 0, 13, 1, 6</column>
+<column name="sub_ln909_fu_3528_p2">-, 0, 0, 39, 5, 32</column>
+<column name="sub_ln918_fu_3632_p2">-, 0, 0, 19, 1, 8</column>
+<column name="tmp_V_fu_3376_p2">-, 0, 0, 47, 1, 40</column>
+<column name="and_ln903_1_fu_3522_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln903_fu_3482_p2">and, 0, 0, 40, 40, 40</column>
+<column name="ap_condition_963">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln824_fu_1403_p2">icmp, 0, 0, 11, 8, 1</column>
+<column name="icmp_ln832_fu_1397_p2">icmp, 0, 0, 11, 9, 9</column>
+<column name="icmp_ln889_fu_3363_p2">icmp, 0, 0, 21, 40, 1</column>
+<column name="icmp_ln900_fu_3440_p2">icmp, 0, 0, 19, 31, 1</column>
+<column name="icmp_ln903_fu_3488_p2">icmp, 0, 0, 21, 40, 1</column>
+<column name="icmp_ln908_fu_3516_p2">icmp, 0, 0, 20, 32, 1</column>
+<column name="lshr_ln901_fu_3460_p2">lshr, 0, 0, 133, 2, 40</column>
+<column name="lshr_ln908_fu_3562_p2">lshr, 0, 0, 133, 40, 40</column>
+<column name="r_V_31_fu_1493_p2">lshr, 0, 0, 139, 43, 43</column>
+<column name="or_ln903_1_fu_3476_p2">or, 0, 0, 40, 40, 40</column>
+<column name="m_fu_3576_p3">select, 0, 0, 40, 1, 40</column>
+<column name="r_V_33_fu_1499_p3">select, 0, 0, 43, 1, 43</column>
+<column name="select_ln897_fu_3620_p3">select, 0, 0, 7, 1, 7</column>
+<column name="select_ln900_fu_3544_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln908_fu_3568_p3">select, 0, 0, 2, 1, 1</column>
+<column name="tmp_V_2_fu_3381_p3">select, 0, 0, 40, 1, 40</column>
+<column name="ush_fu_1471_p3">select, 0, 0, 9, 1, 9</column>
+<column name="r_V_fu_1487_p2">shl, 0, 0, 139, 43, 43</column>
+<column name="shl_ln903_fu_3470_p2">shl, 0, 0, 133, 1, 40</column>
+<column name="shl_ln909_fu_3538_p2">shl, 0, 0, 133, 40, 40</column>
+<column name="trunc_ln657_120_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1331_add">xor, 0, 0, 2, 1, 2</column>
+<column name="trunc_ln657_121_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s_fu_1340_add">xor, 0, 0, 2, 1, 2</column>
+<column name="trunc_ln657_17_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_713_add">xor, 0, 0, 2, 1, 2</column>
+<column name="trunc_ln657_20_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_721_add">xor, 0, 0, 2, 1, 2</column>
+<column name="trunc_ln657_35_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_760_add">xor, 0, 0, 2, 1, 2</column>
+<column name="trunc_ln657_3_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_682_add">xor, 0, 0, 2, 1, 2</column>
+<column name="trunc_ln657_s_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_674_add">xor, 0, 0, 2, 1, 2</column>
+<column name="trunc_ln_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s_fu_667_add">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_10_fu_1941_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_11_fu_1988_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_13_fu_2100_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_14_fu_2124_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_15_fu_2171_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_16_fu_2218_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_17_fu_2265_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_18_fu_2331_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_19_fu_2355_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_20_fu_2402_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_21_fu_2449_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_22_fu_2496_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_23_fu_2562_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_24_fu_2586_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_25_fu_2633_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_26_fu_2680_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_27_fu_2727_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_28_fu_2793_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_29_fu_2817_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_30_fu_2864_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_31_fu_2911_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_32_fu_2958_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_33_fu_3024_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_34_fu_3048_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_35_fu_3095_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_36_fu_3142_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_37_fu_3189_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_38_fu_3255_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_39_fu_3279_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_3_fu_1641_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_4_fu_1665_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_5_fu_1712_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_8_fu_1870_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln182_9_fu_1894_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln903_fu_3502_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_phi_mux_retval_0_phi_fu_336_p8">9, 2, 32, 64</column>
+<column name="ap_phi_reg_pp0_iter1_retval_0_reg_332">9, 2, 32, 64</column>
+<column name="ap_phi_reg_pp0_iter7_retval_0_reg_332">9, 2, 32, 64</column>
+<column name="ap_phi_reg_pp0_iter9_retval_0_reg_332">9, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_phi_reg_pp0_iter1_retval_0_reg_332">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp0_iter2_retval_0_reg_332">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp0_iter3_retval_0_reg_332">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp0_iter4_retval_0_reg_332">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp0_iter5_retval_0_reg_332">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp0_iter6_retval_0_reg_332">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp0_iter7_retval_0_reg_332">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp0_iter8_retval_0_reg_332">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp0_iter9_retval_0_reg_332">32, 0, 32, 0</column>
+<column name="div_i_reg_3902">32, 0, 32, 0</column>
+<column name="icmp_ln824_reg_3687">1, 0, 1, 0</column>
+<column name="icmp_ln832_reg_3683">1, 0, 1, 0</column>
+<column name="icmp_ln889_reg_3976">1, 0, 1, 0</column>
+<column name="tmp_32_reg_3716">1, 0, 1, 0</column>
+<column name="tmp_37_reg_3757">1, 0, 1, 0</column>
+<column name="tmp_42_reg_3793">1, 0, 1, 0</column>
+<column name="tmp_47_reg_3824">1, 0, 1, 0</column>
+<column name="tmp_52_reg_3855">1, 0, 1, 0</column>
+<column name="tmp_57_reg_3886">1, 0, 1, 0</column>
+<column name="tmp_62_reg_3922">1, 0, 1, 0</column>
+<column name="tmp_67_reg_3953">1, 0, 1, 0</column>
+<column name="trunc_ln1287_13_reg_3763">35, 0, 35, 0</column>
+<column name="trunc_ln1287_14_reg_3768">35, 0, 35, 0</column>
+<column name="trunc_ln1287_23_reg_3799">30, 0, 30, 0</column>
+<column name="trunc_ln1287_24_reg_3804">30, 0, 30, 0</column>
+<column name="trunc_ln1287_33_reg_3830">25, 0, 25, 0</column>
+<column name="trunc_ln1287_34_reg_3835">25, 0, 25, 0</column>
+<column name="trunc_ln1287_43_reg_3861">20, 0, 20, 0</column>
+<column name="trunc_ln1287_44_reg_3866">20, 0, 20, 0</column>
+<column name="trunc_ln1287_4_reg_3722">40, 0, 40, 0</column>
+<column name="trunc_ln1287_53_reg_3892">15, 0, 15, 0</column>
+<column name="trunc_ln1287_54_reg_3897">15, 0, 15, 0</column>
+<column name="trunc_ln1287_5_reg_3727">40, 0, 40, 0</column>
+<column name="trunc_ln1287_63_reg_3928">10, 0, 10, 0</column>
+<column name="trunc_ln1287_64_reg_3933">10, 0, 10, 0</column>
+<column name="trunc_ln1287_73_reg_3959">5, 0, 5, 0</column>
+<column name="trunc_ln1287_74_reg_3964">5, 0, 5, 0</column>
+<column name="trunc_ln657_110_reg_3938">43, 0, 43, 0</column>
+<column name="trunc_ln657_111_reg_3943">43, 0, 43, 0</column>
+<column name="trunc_ln657_112_reg_3948">40, 0, 40, 0</column>
+<column name="trunc_ln657_121_reg_3969">40, 0, 40, 0</column>
+<column name="trunc_ln657_16_reg_3732">40, 0, 40, 0</column>
+<column name="trunc_ln657_20_reg_3747">43, 0, 43, 0</column>
+<column name="trunc_ln657_21_reg_3752">43, 0, 43, 0</column>
+<column name="trunc_ln657_34_reg_3773">40, 0, 40, 0</column>
+<column name="trunc_ln657_35_reg_3783">43, 0, 43, 0</column>
+<column name="trunc_ln657_36_reg_3788">43, 0, 43, 0</column>
+<column name="trunc_ln657_3_reg_3706">43, 0, 43, 0</column>
+<column name="trunc_ln657_4_reg_3711">43, 0, 43, 0</column>
+<column name="trunc_ln657_50_reg_3809">43, 0, 43, 0</column>
+<column name="trunc_ln657_51_reg_3814">43, 0, 43, 0</column>
+<column name="trunc_ln657_52_reg_3819">40, 0, 40, 0</column>
+<column name="trunc_ln657_65_reg_3840">43, 0, 43, 0</column>
+<column name="trunc_ln657_66_reg_3845">43, 0, 43, 0</column>
+<column name="trunc_ln657_67_reg_3850">40, 0, 40, 0</column>
+<column name="trunc_ln657_80_reg_3871">43, 0, 43, 0</column>
+<column name="trunc_ln657_81_reg_3876">43, 0, 43, 0</column>
+<column name="trunc_ln657_82_reg_3881">40, 0, 40, 0</column>
+<column name="trunc_ln657_95_reg_3907">43, 0, 43, 0</column>
+<column name="trunc_ln657_96_reg_3912">43, 0, 43, 0</column>
+<column name="trunc_ln657_97_reg_3917">40, 0, 40, 0</column>
+<column name="x_in_int_reg">32, 0, 32, 0</column>
+<column name="xor_ln182_12_reg_3778">1, 0, 1, 0</column>
+<column name="xor_ln182_1_reg_3696">1, 0, 1, 0</column>
+<column name="xor_ln182_2_reg_3701">1, 0, 1, 0</column>
+<column name="xor_ln182_6_reg_3737">1, 0, 1, 0</column>
+<column name="xor_ln182_7_reg_3742">1, 0, 1, 0</column>
+<column name="xor_ln182_reg_3691">1, 0, 1, 0</column>
+<column name="y_in_int_reg">32, 0, 32, 0</column>
+<column name="icmp_ln824_reg_3687">64, 32, 1, 0</column>
+<column name="icmp_ln832_reg_3683">64, 32, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, atan2_generic&lt;float&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, atan2_generic&lt;float&gt;, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, atan2_generic&lt;float&gt;, return value</column>
+<column name="ap_ce">in, 1, ap_ctrl_hs, atan2_generic&lt;float&gt;, return value</column>
+<column name="y_in">in, 32, ap_none, y_in, scalar</column>
+<column name="x_in">in, 32, ap_none, x_in, scalar</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,294 @@
+modi out 340 display as below:
+       0.7391      -0.7391       0.7391      -0.7391       0.3061      -0.3061       0.3061      -0.3061       0.8485      -0.8485
+       0.8485      -0.8485       1.1591      -1.1591       1.1591      -1.1591       1.4142      -1.4142       1.4142      -1.4142
+        1.782       -1.782        1.782       -1.782       0.3106      -0.3106       0.3106      -0.3106       1.9754      -1.9754
+       1.9754      -1.9754       0.3263      -0.3263       0.3263      -0.3263       0.9567      -0.9567       0.9567      -0.9567
+       1.9834      -1.9834       1.9834      -1.9834       1.5219      -1.5219       1.5219      -1.5219        0.908       -0.908
+        0.908       -0.908       0.3129      -0.3129       0.3129      -0.3129       2.3097      -2.3097       2.3097      -2.3097
+       2.4786      -2.4786       2.4786      -2.4786       0.7391      -0.7391       0.7391      -0.7391       0.3061      -0.3061
+       0.3061      -0.3061       0.8485      -0.8485       0.8485      -0.8485       1.1591      -1.1591       1.1591      -1.1591
+       1.4142      -1.4142       1.4142      -1.4142        1.782       -1.782        1.782       -1.782       0.3106      -0.3106
+       0.3106      -0.3106       1.9754      -1.9754       1.9754      -1.9754       0.3263      -0.3263       0.3263      -0.3263
+       0.9567      -0.9567       0.9567      -0.9567       1.9834      -1.9834       1.9834      -1.9834       1.5219      -1.5219
+       1.5219      -1.5219        0.908       -0.908        0.908       -0.908       0.3129      -0.3129       0.3129      -0.3129
+       2.3097      -2.3097       2.3097      -2.3097       2.4786      -2.4786       2.4786      -2.4786       0.7391      -0.7391
+       0.7391      -0.7391       0.3061      -0.3061       0.3061      -0.3061       0.8485      -0.8485       0.8485      -0.8485
+       1.1591      -1.1591       1.1591      -1.1591       1.4142      -1.4142       1.4142      -1.4142        1.782       -1.782
+        1.782       -1.782       0.3106      -0.3106       0.3106      -0.3106       1.9754      -1.9754       1.9754      -1.9754
+       0.3263      -0.3263       0.3263      -0.3263       0.9567      -0.9567       0.9567      -0.9567       1.9834      -1.9834
+       1.9834      -1.9834       1.5219      -1.5219       1.5219      -1.5219        0.908       -0.908        0.908       -0.908
+       0.3129      -0.3129       0.3129      -0.3129       2.3097      -2.3097       2.3097      -2.3097       2.4786      -2.4786
+       2.4786      -2.4786       0.7391      -0.7391       0.7391      -0.7391       0.3061      -0.3061       0.3061      -0.3061
+       0.8485      -0.8485       0.8485      -0.8485       1.1591      -1.1591       1.1591      -1.1591       1.4142      -1.4142
+       1.4142      -1.4142        1.782       -1.782        1.782       -1.782       0.3106      -0.3106       0.3106      -0.3106
+       1.9754      -1.9754       1.9754      -1.9754       0.3263      -0.3263       0.3263      -0.3263       0.9567      -0.9567
+       0.9567      -0.9567       1.9834      -1.9834       1.9834      -1.9834       1.5219      -1.5219       1.5219      -1.5219
+        0.908       -0.908        0.908       -0.908       0.3129      -0.3129       0.3129      -0.3129       2.3097      -2.3097
+       2.3097      -2.3097       2.4786      -2.4786       2.4786      -2.4786       0.7391      -0.7391       0.7391      -0.7391
+       0.3061      -0.3061       0.3061      -0.3061       0.8485      -0.8485       0.8485      -0.8485       1.1591      -1.1591
+       1.1591      -1.1591       1.4142      -1.4142       1.4142      -1.4142        1.782       -1.782        1.782       -1.782
+       0.3106      -0.3106       0.3106      -0.3106       1.9754      -1.9754       1.9754      -1.9754       0.3263      -0.3263
+       0.3263      -0.3263       0.9567      -0.9567       0.9567      -0.9567       1.9834      -1.9834       1.9834      -1.9834
+       1.5219      -1.5219       1.5219      -1.5219        0.908       -0.908        0.908       -0.908       0.3129      -0.3129
+       0.3129      -0.3129       2.3097      -2.3097       2.3097      -2.3097       2.4786      -2.4786       2.4786      -2.4786
+       0.7391      -0.7391       0.7391      -0.7391       0.3061      -0.3061       0.3061      -0.3061       0.8485      -0.8485
+       0.8485      -0.8485       1.1591      -1.1591       1.1591      -1.1591       1.4142      -1.4142       1.4142      -1.4142
+
+modq out 340 display as below:
+       0.3061       0.3061      -0.3061      -0.3061       0.7391       0.7391      -0.7391      -0.7391       0.8485       0.8485
+      -0.8485      -0.8485       0.3106       0.3106      -0.3106      -0.3106       1.4142       1.4142      -1.4142      -1.4142
+        0.908        0.908       -0.908       -0.908       1.1591       1.1591      -1.1591      -1.1591       0.3129       0.3129
+      -0.3129      -0.3129       2.4786       2.4786      -2.4786      -2.4786       2.3097       2.3097      -2.3097      -2.3097
+       1.5219       1.5219      -1.5219      -1.5219       1.9834       1.9834      -1.9834      -1.9834        1.782        1.782
+       -1.782       -1.782       1.9754       1.9754      -1.9754      -1.9754       0.9567       0.9567      -0.9567      -0.9567
+       0.3263       0.3263      -0.3263      -0.3263       0.3061       0.3061      -0.3061      -0.3061       0.7391       0.7391
+      -0.7391      -0.7391       0.8485       0.8485      -0.8485      -0.8485       0.3106       0.3106      -0.3106      -0.3106
+       1.4142       1.4142      -1.4142      -1.4142        0.908        0.908       -0.908       -0.908       1.1591       1.1591
+      -1.1591      -1.1591       0.3129       0.3129      -0.3129      -0.3129       2.4786       2.4786      -2.4786      -2.4786
+       2.3097       2.3097      -2.3097      -2.3097       1.5219       1.5219      -1.5219      -1.5219       1.9834       1.9834
+      -1.9834      -1.9834        1.782        1.782       -1.782       -1.782       1.9754       1.9754      -1.9754      -1.9754
+       0.9567       0.9567      -0.9567      -0.9567       0.3263       0.3263      -0.3263      -0.3263       0.3061       0.3061
+      -0.3061      -0.3061       0.7391       0.7391      -0.7391      -0.7391       0.8485       0.8485      -0.8485      -0.8485
+       0.3106       0.3106      -0.3106      -0.3106       1.4142       1.4142      -1.4142      -1.4142        0.908        0.908
+       -0.908       -0.908       1.1591       1.1591      -1.1591      -1.1591       0.3129       0.3129      -0.3129      -0.3129
+       2.4786       2.4786      -2.4786      -2.4786       2.3097       2.3097      -2.3097      -2.3097       1.5219       1.5219
+      -1.5219      -1.5219       1.9834       1.9834      -1.9834      -1.9834        1.782        1.782       -1.782       -1.782
+       1.9754       1.9754      -1.9754      -1.9754       0.9567       0.9567      -0.9567      -0.9567       0.3263       0.3263
+      -0.3263      -0.3263       0.3061       0.3061      -0.3061      -0.3061       0.7391       0.7391      -0.7391      -0.7391
+       0.8485       0.8485      -0.8485      -0.8485       0.3106       0.3106      -0.3106      -0.3106       1.4142       1.4142
+      -1.4142      -1.4142        0.908        0.908       -0.908       -0.908       1.1591       1.1591      -1.1591      -1.1591
+       0.3129       0.3129      -0.3129      -0.3129       2.4786       2.4786      -2.4786      -2.4786       2.3097       2.3097
+      -2.3097      -2.3097       1.5219       1.5219      -1.5219      -1.5219       1.9834       1.9834      -1.9834      -1.9834
+        1.782        1.782       -1.782       -1.782       1.9754       1.9754      -1.9754      -1.9754       0.9567       0.9567
+      -0.9567      -0.9567       0.3263       0.3263      -0.3263      -0.3263       0.3061       0.3061      -0.3061      -0.3061
+       0.7391       0.7391      -0.7391      -0.7391       0.8485       0.8485      -0.8485      -0.8485       0.3106       0.3106
+      -0.3106      -0.3106       1.4142       1.4142      -1.4142      -1.4142        0.908        0.908       -0.908       -0.908
+       1.1591       1.1591      -1.1591      -1.1591       0.3129       0.3129      -0.3129      -0.3129       2.4786       2.4786
+      -2.4786      -2.4786       2.3097       2.3097      -2.3097      -2.3097       1.5219       1.5219      -1.5219      -1.5219
+       1.9834       1.9834      -1.9834      -1.9834        1.782        1.782       -1.782       -1.782       1.9754       1.9754
+      -1.9754      -1.9754       0.9567       0.9567      -0.9567      -0.9567       0.3263       0.3263      -0.3263      -0.3263
+       0.3061       0.3061      -0.3061      -0.3061       0.7391       0.7391      -0.7391      -0.7391       0.8485       0.8485
+      -0.8485      -0.8485       0.3106       0.3106      -0.3106      -0.3106       1.4142       1.4142      -1.4142      -1.4142
+
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_apskmod_top glbl -prj apskmod.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s apskmod -debug wave 
+Multi-threading is on. Using 34 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/AESL_axi_s_modi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_modi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/AESL_axi_s_modq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_modq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/apskmod_mod_tempin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apskmod_mod_tempin_ram
+INFO: [VRFC 10-311] analyzing module apskmod_mod_tempin
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/AESL_axi_s_mod_datin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_mod_datin
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/apskmod.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_apskmod_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/apskmod_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apskmod_regslice_both
+INFO: [VRFC 10-311] analyzing module apskmod_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/apskmod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apskmod
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/nodf_module_interface.sv:4]
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.apskmod_mod_tempin_ram
+Compiling module xil_defaultlib.apskmod_mod_tempin(DataWidth=32,...
+Compiling module xil_defaultlib.apskmod_regslice_both
+Compiling module xil_defaultlib.apskmod
+Compiling module xil_defaultlib.fifo(DEPTH=340,WIDTH=32)
+Compiling module xil_defaultlib.AESL_axi_s_mod_datin
+Compiling module xil_defaultlib.AESL_axi_s_modi
+Compiling module xil_defaultlib.AESL_axi_s_modq
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_apskmod_top
+Compiling module work.glbl
+Built simulation snapshot apskmod
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/xsim.dir/apskmod/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul  1 05:01:59 2021...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/apskmod/xsim_script.tcl
+# xsim {apskmod} -view {{apskmod_dataflow_ana.wcfg}} -tclbatch {apskmod.tcl} -protoinst {apskmod.protoinst}
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file apskmod.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_apskmod_top/AESL_inst_apskmod//AESL_inst_apskmod_activity
+Time resolution is 1 ps
+open_wave_config apskmod_dataflow_ana.wcfg
+source apskmod.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set modq_group [add_wave_group modq(axis) -into $coutputgroup]
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/modq_TREADY -into $modq_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/modq_TVALID -into $modq_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/modq_TDATA -into $modq_group -radix hex
+## set modi_group [add_wave_group modi(axis) -into $coutputgroup]
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/modi_TREADY -into $modi_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/modi_TVALID -into $modi_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/modi_TDATA -into $modi_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set mod_datin_group [add_wave_group mod_datin(axis) -into $cinputgroup]
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/mod_datin_TREADY -into $mod_datin_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/mod_datin_TVALID -into $mod_datin_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/mod_datin_TDATA -into $mod_datin_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/ap_start -into $blocksiggroup
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/ap_done -into $blocksiggroup
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/ap_idle -into $blocksiggroup
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_apskmod_top/AESL_inst_apskmod/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_apskmod_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_apskmod_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_apskmod_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_apskmod_top/LENGTH_mod_datin -into $tb_portdepth_group -radix hex
+## add_wave /apatb_apskmod_top/LENGTH_modi -into $tb_portdepth_group -radix hex
+## add_wave /apatb_apskmod_top/LENGTH_modq -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_modq_group [add_wave_group modq(axis) -into $tbcoutputgroup]
+## add_wave /apatb_apskmod_top/modq_TREADY -into $tb_modq_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/modq_TVALID -into $tb_modq_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/modq_TDATA -into $tb_modq_group -radix hex
+## set tb_modi_group [add_wave_group modi(axis) -into $tbcoutputgroup]
+## add_wave /apatb_apskmod_top/modi_TREADY -into $tb_modi_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/modi_TVALID -into $tb_modi_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/modi_TDATA -into $tb_modi_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_mod_datin_group [add_wave_group mod_datin(axis) -into $tbcinputgroup]
+## add_wave /apatb_apskmod_top/mod_datin_TREADY -into $tb_mod_datin_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/mod_datin_TVALID -into $tb_mod_datin_group -color #ffff00 -radix hex
+## add_wave /apatb_apskmod_top/mod_datin_TDATA -into $tb_mod_datin_group -radix hex
+## save_wave_config apskmod.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "10415000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 10455 ns : File "/home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/apskmod.autotb.v" Line 301
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jul  1 05:02:08 2021...
+modi out 340 display as below:
+       0.7391      -0.7391       0.7391      -0.7391       0.3061      -0.3061       0.3061      -0.3061       0.8485      -0.8485
+       0.8485      -0.8485       1.1591      -1.1591       1.1591      -1.1591       1.4142      -1.4142       1.4142      -1.4142
+        1.782       -1.782        1.782       -1.782       0.3106      -0.3106       0.3106      -0.3106       1.9754      -1.9754
+       1.9754      -1.9754       0.3263      -0.3263       0.3263      -0.3263       0.9567      -0.9567       0.9567      -0.9567
+       1.9834      -1.9834       1.9834      -1.9834       1.5219      -1.5219       1.5219      -1.5219        0.908       -0.908
+        0.908       -0.908       0.3129      -0.3129       0.3129      -0.3129       2.3097      -2.3097       2.3097      -2.3097
+       2.4786      -2.4786       2.4786      -2.4786       0.7391      -0.7391       0.7391      -0.7391       0.3061      -0.3061
+       0.3061      -0.3061       0.8485      -0.8485       0.8485      -0.8485       1.1591      -1.1591       1.1591      -1.1591
+       1.4142      -1.4142       1.4142      -1.4142        1.782       -1.782        1.782       -1.782       0.3106      -0.3106
+       0.3106      -0.3106       1.9754      -1.9754       1.9754      -1.9754       0.3263      -0.3263       0.3263      -0.3263
+       0.9567      -0.9567       0.9567      -0.9567       1.9834      -1.9834       1.9834      -1.9834       1.5219      -1.5219
+       1.5219      -1.5219        0.908       -0.908        0.908       -0.908       0.3129      -0.3129       0.3129      -0.3129
+       2.3097      -2.3097       2.3097      -2.3097       2.4786      -2.4786       2.4786      -2.4786       0.7391      -0.7391
+       0.7391      -0.7391       0.3061      -0.3061       0.3061      -0.3061       0.8485      -0.8485       0.8485      -0.8485
+       1.1591      -1.1591       1.1591      -1.1591       1.4142      -1.4142       1.4142      -1.4142        1.782       -1.782
+        1.782       -1.782       0.3106      -0.3106       0.3106      -0.3106       1.9754      -1.9754       1.9754      -1.9754
+       0.3263      -0.3263       0.3263      -0.3263       0.9567      -0.9567       0.9567      -0.9567       1.9834      -1.9834
+       1.9834      -1.9834       1.5219      -1.5219       1.5219      -1.5219        0.908       -0.908        0.908       -0.908
+       0.3129      -0.3129       0.3129      -0.3129       2.3097      -2.3097       2.3097      -2.3097       2.4786      -2.4786
+       2.4786      -2.4786       0.7391      -0.7391       0.7391      -0.7391       0.3061      -0.3061       0.3061      -0.3061
+       0.8485      -0.8485       0.8485      -0.8485       1.1591      -1.1591       1.1591      -1.1591       1.4142      -1.4142
+       1.4142      -1.4142        1.782       -1.782        1.782       -1.782       0.3106      -0.3106       0.3106      -0.3106
+       1.9754      -1.9754       1.9754      -1.9754       0.3263      -0.3263       0.3263      -0.3263       0.9567      -0.9567
+       0.9567      -0.9567       1.9834      -1.9834       1.9834      -1.9834       1.5219      -1.5219       1.5219      -1.5219
+        0.908       -0.908        0.908       -0.908       0.3129      -0.3129       0.3129      -0.3129       2.3097      -2.3097
+       2.3097      -2.3097       2.4786      -2.4786       2.4786      -2.4786       0.7391      -0.7391       0.7391      -0.7391
+       0.3061      -0.3061       0.3061      -0.3061       0.8485      -0.8485       0.8485      -0.8485       1.1591      -1.1591
+       1.1591      -1.1591       1.4142      -1.4142       1.4142      -1.4142        1.782       -1.782        1.782       -1.782
+       0.3106      -0.3106       0.3106      -0.3106       1.9754      -1.9754       1.9754      -1.9754       0.3263      -0.3263
+       0.3263      -0.3263       0.9567      -0.9567       0.9567      -0.9567       1.9834      -1.9834       1.9834      -1.9834
+       1.5219      -1.5219       1.5219      -1.5219        0.908       -0.908        0.908       -0.908       0.3129      -0.3129
+       0.3129      -0.3129       2.3097      -2.3097       2.3097      -2.3097       2.4786      -2.4786       2.4786      -2.4786
+       0.7391      -0.7391       0.7391      -0.7391       0.3061      -0.3061       0.3061      -0.3061       0.8485      -0.8485
+       0.8485      -0.8485       1.1591      -1.1591       1.1591      -1.1591       1.4142      -1.4142       1.4142      -1.4142
+
+modq out 340 display as below:
+       0.3061       0.3061      -0.3061      -0.3061       0.7391       0.7391      -0.7391      -0.7391       0.8485       0.8485
+      -0.8485      -0.8485       0.3106       0.3106      -0.3106      -0.3106       1.4142       1.4142      -1.4142      -1.4142
+        0.908        0.908       -0.908       -0.908       1.1591       1.1591      -1.1591      -1.1591       0.3129       0.3129
+      -0.3129      -0.3129       2.4786       2.4786      -2.4786      -2.4786       2.3097       2.3097      -2.3097      -2.3097
+       1.5219       1.5219      -1.5219      -1.5219       1.9834       1.9834      -1.9834      -1.9834        1.782        1.782
+       -1.782       -1.782       1.9754       1.9754      -1.9754      -1.9754       0.9567       0.9567      -0.9567      -0.9567
+       0.3263       0.3263      -0.3263      -0.3263       0.3061       0.3061      -0.3061      -0.3061       0.7391       0.7391
+      -0.7391      -0.7391       0.8485       0.8485      -0.8485      -0.8485       0.3106       0.3106      -0.3106      -0.3106
+       1.4142       1.4142      -1.4142      -1.4142        0.908        0.908       -0.908       -0.908       1.1591       1.1591
+      -1.1591      -1.1591       0.3129       0.3129      -0.3129      -0.3129       2.4786       2.4786      -2.4786      -2.4786
+       2.3097       2.3097      -2.3097      -2.3097       1.5219       1.5219      -1.5219      -1.5219       1.9834       1.9834
+      -1.9834      -1.9834        1.782        1.782       -1.782       -1.782       1.9754       1.9754      -1.9754      -1.9754
+       0.9567       0.9567      -0.9567      -0.9567       0.3263       0.3263      -0.3263      -0.3263       0.3061       0.3061
+      -0.3061      -0.3061       0.7391       0.7391      -0.7391      -0.7391       0.8485       0.8485      -0.8485      -0.8485
+       0.3106       0.3106      -0.3106      -0.3106       1.4142       1.4142      -1.4142      -1.4142        0.908        0.908
+       -0.908       -0.908       1.1591       1.1591      -1.1591      -1.1591       0.3129       0.3129      -0.3129      -0.3129
+       2.4786       2.4786      -2.4786      -2.4786       2.3097       2.3097      -2.3097      -2.3097       1.5219       1.5219
+      -1.5219      -1.5219       1.9834       1.9834      -1.9834      -1.9834        1.782        1.782       -1.782       -1.782
+       1.9754       1.9754      -1.9754      -1.9754       0.9567       0.9567      -0.9567      -0.9567       0.3263       0.3263
+      -0.3263      -0.3263       0.3061       0.3061      -0.3061      -0.3061       0.7391       0.7391      -0.7391      -0.7391
+       0.8485       0.8485      -0.8485      -0.8485       0.3106       0.3106      -0.3106      -0.3106       1.4142       1.4142
+      -1.4142      -1.4142        0.908        0.908       -0.908       -0.908       1.1591       1.1591      -1.1591      -1.1591
+       0.3129       0.3129      -0.3129      -0.3129       2.4786       2.4786      -2.4786      -2.4786       2.3097       2.3097
+      -2.3097      -2.3097       1.5219       1.5219      -1.5219      -1.5219       1.9834       1.9834      -1.9834      -1.9834
+        1.782        1.782       -1.782       -1.782       1.9754       1.9754      -1.9754      -1.9754       0.9567       0.9567
+      -0.9567      -0.9567       0.3263       0.3263      -0.3263      -0.3263       0.3061       0.3061      -0.3061      -0.3061
+       0.7391       0.7391      -0.7391      -0.7391       0.8485       0.8485      -0.8485      -0.8485       0.3106       0.3106
+      -0.3106      -0.3106       1.4142       1.4142      -1.4142      -1.4142        0.908        0.908       -0.908       -0.908
+       1.1591       1.1591      -1.1591      -1.1591       0.3129       0.3129      -0.3129      -0.3129       2.4786       2.4786
+      -2.4786      -2.4786       2.3097       2.3097      -2.3097      -2.3097       1.5219       1.5219      -1.5219      -1.5219
+       1.9834       1.9834      -1.9834      -1.9834        1.782        1.782       -1.782       -1.782       1.9754       1.9754
+      -1.9754      -1.9754       0.9567       0.9567      -0.9567      -0.9567       0.3263       0.3263      -0.3263      -0.3263
+       0.3061       0.3061      -0.3061      -0.3061       0.7391       0.7391      -0.7391      -0.7391       0.8485       0.8485
+      -0.8485      -0.8485       0.3106       0.3106      -0.3106      -0.3106       1.4142       1.4142      -1.4142      -1.4142
+

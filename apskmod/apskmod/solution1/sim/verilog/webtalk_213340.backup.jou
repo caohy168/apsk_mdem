@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  1 05:01:59 2021
+# Process ID: 213340
+# Current directory: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/xsim.dir/apskmod/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/webtalk.log
+# Journal file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/xsim.dir/apskmod/webtalk/xsim_webtalk.tcl -notrace

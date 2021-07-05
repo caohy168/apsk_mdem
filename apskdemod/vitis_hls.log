@@ -1,0 +1,60 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'root' on host 'caohy168' (Linux_x86_64 version 5.4.0-77-generic) on Sun Jul 04 23:24:56 EDT 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/caohy168/Work/apsk_mdem/apskdemod'
+Sourcing Tcl script '/home/caohy168/Work/apsk_mdem/apskdemod/apskdemod/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project apskdemod 
+INFO: [HLS 200-10] Opening project '/home/caohy168/Work/apsk_mdem/apskdemod/apskdemod'.
+INFO: [HLS 200-1510] Running: set_top apskdemod 
+INFO: [HLS 200-1510] Running: add_files apskdemod.cpp 
+INFO: [HLS 200-10] Adding design file 'apskdemod.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files apskdemod.h 
+INFO: [HLS 200-10] Adding design file 'apskdemod.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb apskdemod_inspire.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'apskdemod_inspire.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/caohy168/Work/apsk_mdem/apskdemod/apskdemod/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/imports/apsk_mdem/apskmod/apskdemod.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/caohy168/Work/bbp_vcu128/xdma_bpu_ex/imports/apsk_mdem/apskmod/apskdemod.zip -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name apskdemod apskdemod 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskdemod demodi 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskdemod demodq 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskdemod demod_datout 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../apskdemod_inspire.cpp in debug mode
+   Compiling ../../../../apskdemod.cpp in debug mode
+   Generating csim.exe
+Today human 340 life styles in the city:
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
+21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,
+42,43,44,46,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,
+63,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,
+20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,
+41,42,43,44,46,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,
+62,63,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,
+19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,
+40,41,42,43,44,46,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,
+61,62,63,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,
+18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,
+39,40,41,42,43,44,46,46,47,48,49,50,51,52,53,54,55,56,57,58,59,
+60,61,62,63,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,
+17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,
+38,39,40,41,42,43,44,46,46,47,48,49,50,51,52,53,54,55,56,57,58,
+59,60,61,62,63,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,
+16,17,18,19,
+45
+Working in the Sunday stop.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.1 seconds. CPU system time: 0.27 seconds. Elapsed time: 0.89 seconds; current allocated memory: 207.691 MB.

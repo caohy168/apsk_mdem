@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun  6 23:46:43 2021
+# Process ID: 20473
+# Current directory: /home/caohy168/Work/apsk_mdem/apskdemod/apskdemod/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/apskdemod/xsim_script.tcl}
+# Log file: /home/caohy168/Work/apsk_mdem/apskdemod/apskdemod/solution1/sim/verilog/xsim.log
+# Journal file: /home/caohy168/Work/apsk_mdem/apskdemod/apskdemod/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/apskdemod/xsim_script.tcl
+# xsim {apskdemod} -view {{apskdemod_dataflow_ana.wcfg}} -tclbatch {apskdemod.tcl} -protoinst {apskdemod.protoinst}
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file apskdemod.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_apskdemod_top/AESL_inst_apskdemod//AESL_inst_apskdemod_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_apskdemod_top/AESL_inst_apskdemod/grp_pow_generic_double_s_fu_754/grp_pow_generic_double_s_fu_754_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_apskdemod_top/AESL_inst_apskdemod/grp_pow_generic_double_s_fu_783/grp_pow_generic_double_s_fu_783_activity
+Time resolution is 1 ps
+open_wave_config apskdemod_dataflow_ana.wcfg
+source apskdemod.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set demod_datout_group [add_wave_group demod_datout(axis) -into $coutputgroup]
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/demod_datout_TREADY -into $demod_datout_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/demod_datout_TVALID -into $demod_datout_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/demod_datout_TDATA -into $demod_datout_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set demodq_group [add_wave_group demodq(axis) -into $cinputgroup]
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/demodq_TREADY -into $demodq_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/demodq_TVALID -into $demodq_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/demodq_TDATA -into $demodq_group -radix hex
+## set demodi_group [add_wave_group demodi(axis) -into $cinputgroup]
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/demodi_TREADY -into $demodi_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/demodi_TVALID -into $demodi_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/demodi_TDATA -into $demodi_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/ap_start -into $blocksiggroup
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/ap_done -into $blocksiggroup
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/ap_idle -into $blocksiggroup
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_apskdemod_top/AESL_inst_apskdemod/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_apskdemod_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_apskdemod_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_apskdemod_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_apskdemod_top/LENGTH_demod_datout -into $tb_portdepth_group -radix hex
+## add_wave /apatb_apskdemod_top/LENGTH_demodi -into $tb_portdepth_group -radix hex
+## add_wave /apatb_apskdemod_top/LENGTH_demodq -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_demod_datout_group [add_wave_group demod_datout(axis) -into $tbcoutputgroup]
+## add_wave /apatb_apskdemod_top/demod_datout_TREADY -into $tb_demod_datout_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/demod_datout_TVALID -into $tb_demod_datout_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/demod_datout_TDATA -into $tb_demod_datout_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_demodq_group [add_wave_group demodq(axis) -into $tbcinputgroup]
+## add_wave /apatb_apskdemod_top/demodq_TREADY -into $tb_demodq_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/demodq_TVALID -into $tb_demodq_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/demodq_TDATA -into $tb_demodq_group -radix hex
+## set tb_demodi_group [add_wave_group demodi(axis) -into $tbcinputgroup]
+## add_wave /apatb_apskdemod_top/demodi_TREADY -into $tb_demodi_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/demodi_TVALID -into $tb_demodi_group -color #ffff00 -radix hex
+## add_wave /apatb_apskdemod_top/demodi_TDATA -into $tb_demodi_group -radix hex
+## save_wave_config apskdemod.wcfg
+## run all
+Warning: OPMODE Input Warning : The OPMODE 001XXXX with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_apskdemod_top/AESL_inst_apskdemod/dadd_64ns_64ns_64_3_full_dsp_1_U130/apskdemod_ap_dadd_1_full_dsp_64_u/inst/i_synth/addsub_op/ADDSUB/logic_speed/OP/ALIGN_BLK/FRAC_ADDSUB/dsp_add/FRAC_ADDSUB/i_no_versal_es1_workaround/dsp48e1_add/DSP48E1_ADD/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "18185000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 18225 ns : File "/home/caohy168/Work/apsk_mdem/apskdemod/apskdemod/solution1/sim/verilog/apskdemod.autotb.v" Line 287
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 5171.547 ; gain = 0.000 ; free physical = 63746 ; free virtual = 71890
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Jun  6 23:46:57 2021...

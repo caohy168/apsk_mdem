@@ -1,0 +1,1253 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.327 MB.
+INFO: [HLS 200-10] Analyzing design file 'apskmod.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.9 seconds. CPU system time: 0.22 seconds. Elapsed time: 0.63 seconds; current allocated memory: 192.496 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'apskmod(float*, float*, float*)' (apskmod.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.38 seconds. CPU system time: 0.26 seconds. Elapsed time: 4.72 seconds; current allocated memory: 197.058 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 197.059 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 211.426 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 231.893 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_1' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:13) in function 'apskmod' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_16_2' (apskmod.cpp:16) in function 'apskmod' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_228_3' (apskmod.cpp:228) in function 'apskmod' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.29 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 274.937 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempin' (apskmod.cpp:15:68)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:32:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:33:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:35:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:36:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:38:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:39:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:41:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:42:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:44:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:45:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:47:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:50:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:51:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:53:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:54:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:56:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:57:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:59:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:60:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:62:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:63:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:66:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:68:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:69:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:71:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:72:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:74:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:75:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:77:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:78:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:80:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:81:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:83:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:84:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:86:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:87:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:89:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:90:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:92:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:93:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:95:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:96:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:98:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:99:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:101:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:102:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:104:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:105:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:107:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:108:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:110:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:111:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:113:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:114:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:116:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:117:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:119:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:120:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:122:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:123:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:125:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:126:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:128:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:129:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:131:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:132:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:134:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:135:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:137:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:138:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:140:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:141:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:143:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:144:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:146:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:147:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:149:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:150:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:152:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:153:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:155:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:156:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:158:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:159:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:161:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:162:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:164:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:165:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:167:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:168:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:170:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:171:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:173:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:174:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:176:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:177:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:179:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:180:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:182:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:183:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:185:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:186:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:188:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:189:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:191:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:192:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:194:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:195:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:197:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:198:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:200:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:201:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:203:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:204:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:206:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:207:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:209:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:210:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:212:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:213:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:215:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:216:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:218:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:219:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:221:20)
+INFO: [HLS 200-472]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.327 MB.
+INFO: [HLS 200-10] Analyzing design file 'apskmod.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.87 seconds. CPU system time: 0.24 seconds. Elapsed time: 0.64 seconds; current allocated memory: 192.496 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'apskmod(float*, float*, float*)' (apskmod.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.42 seconds. CPU system time: 0.24 seconds. Elapsed time: 4.65 seconds; current allocated memory: 197.059 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 197.059 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 211.427 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 231.899 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_1' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:13) in function 'apskmod' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_16_2' (apskmod.cpp:16) in function 'apskmod' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_228_3' (apskmod.cpp:228) in function 'apskmod' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.29 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 274.946 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempin' (apskmod.cpp:15:68)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:32:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:33:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:35:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:36:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:38:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:39:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:41:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:42:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:44:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:45:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:47:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:50:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:51:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:53:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:54:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:56:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:57:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:59:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:60:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:62:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:63:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:66:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:68:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:69:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:71:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:72:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:74:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:75:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:77:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:78:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:80:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:81:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:83:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:84:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:86:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:87:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:89:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:90:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:92:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:93:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:95:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:96:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:98:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:99:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:101:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:102:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:104:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:105:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:107:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:108:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:110:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:111:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:113:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:114:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:116:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:117:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:119:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:120:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:122:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:123:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:125:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:126:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:128:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:129:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:131:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:132:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:134:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:135:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:137:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:138:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:140:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:141:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:143:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:144:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:146:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:147:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:149:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:150:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:152:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:153:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:155:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:156:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:158:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:159:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:161:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:162:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:164:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:165:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:167:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:168:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:170:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:171:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:173:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:174:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:176:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:177:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:179:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:180:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:182:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:183:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:185:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:186:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:188:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:189:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:191:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:192:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:194:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:195:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:197:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:198:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:200:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:201:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:203:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:204:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:206:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:207:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:209:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:210:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:212:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:213:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:215:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:216:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:218:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:219:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:221:20)
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name apskmod apskmod 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register apskmod mod_datin 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register apskmod modi 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register_mode both -register apskmod modq 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 207.435 MB.
+INFO: [HLS 200-10] Analyzing design file 'apskmod.cpp' ... 
+WARNING: [HLS 214-140] Array stream parameter 'mod_datin' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+WARNING: [HLS 214-140] Array stream parameter 'modi' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+WARNING: [HLS 214-140] Array stream parameter 'modq' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.77 seconds. CPU system time: 0.24 seconds. Elapsed time: 0.58 seconds; current allocated memory: 208.720 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'apskmod(float*, float*, float*)' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'mod_datin' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modi' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modq' (apskmod.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.38 seconds. CPU system time: 0.26 seconds. Elapsed time: 4.64 seconds; current allocated memory: 213.255 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 213.256 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 227.628 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 248.102 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_1' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:13) in function 'apskmod' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_16_2' (apskmod.cpp:16) in function 'apskmod' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_228_3' (apskmod.cpp:228) in function 'apskmod' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.32 seconds. CPU system time: 0 seconds. Elapsed time: 0.34 seconds; current allocated memory: 291.124 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempin' (apskmod.cpp:15:68)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:32:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:33:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:35:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:36:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:38:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:39:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:41:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:42:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:44:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:45:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:47:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:50:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:51:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:53:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:54:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:56:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:57:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:59:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:60:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:62:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:63:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:66:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:68:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:69:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:71:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:72:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:74:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:75:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:77:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:78:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:80:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:81:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:83:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:84:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:86:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:87:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:89:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:90:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:92:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:93:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:95:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:96:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:98:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:99:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:101:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:102:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:104:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:105:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:107:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:108:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:110:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:111:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:113:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:114:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:116:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:117:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:119:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:120:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:122:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:123:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:125:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:126:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:128:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:129:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:131:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:132:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:134:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:135:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:137:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:138:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:140:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:141:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:143:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:144:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:146:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:147:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:149:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:150:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:152:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:153:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:155:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:156:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:158:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:159:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:161:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:162:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:164:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:165:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:167:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:168:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:170:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:171:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:173:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:174:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:176:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:177:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:179:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:180:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:182:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:183:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:185:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:186:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:188:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:189:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:191:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:192:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:194:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:195:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:197:20)
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name apskmod apskmod 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod mod_datin 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod modi 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod modq 
+INFO: [HLS 200-1510] Running: set_directive_loop_flatten apskmod/apskmod_label0 
+INFO: [HLS 200-1510] Running: set_directive_loop_flatten apskmod/apskmod_label1 
+INFO: [HLS 200-1510] Running: set_directive_loop_flatten apskmod/apskmod_label2 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.463 MB.
+INFO: [HLS 200-10] Analyzing design file 'apskmod.cpp' ... 
+WARNING: [HLS 214-140] Array stream parameter 'mod_datin' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+WARNING: [HLS 214-140] Array stream parameter 'modi' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+WARNING: [HLS 214-140] Array stream parameter 'modq' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.8 seconds. CPU system time: 0.23 seconds. Elapsed time: 0.63 seconds; current allocated memory: 192.751 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'apskmod(float*, float*, float*)' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'mod_datin' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modi' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modq' (apskmod.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.35 seconds. CPU system time: 0.26 seconds. Elapsed time: 4.61 seconds; current allocated memory: 197.396 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 197.397 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 211.793 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 232.254 MB.
+INFO: [XFORM 203-510] Pipelining loop 'apskmod_label0' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:13) in function 'apskmod' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'apskmod_label1' (apskmod.cpp:16) in function 'apskmod' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'apskmod_label2' (apskmod.cpp:228) in function 'apskmod' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.3 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 275.272 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempin' (apskmod.cpp:15:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:32:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:33:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:35:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:36:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:38:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:39:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:41:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:42:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:44:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:45:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:47:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:50:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:51:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:53:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:54:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:56:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:57:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:59:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:60:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:62:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:63:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:66:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:68:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:69:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:71:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:72:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:74:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:75:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:77:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:78:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:80:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:81:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:83:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:84:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:86:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:87:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:89:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:90:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:92:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:93:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:95:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:96:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:98:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:99:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:101:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:102:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:104:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:105:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:107:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:108:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:110:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:111:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:113:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:114:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:116:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:117:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:119:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:120:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:122:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:123:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:125:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:126:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:128:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:129:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:131:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:132:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:134:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:135:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:137:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:138:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:140:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:141:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:143:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:144:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:146:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:147:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:149:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:150:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:152:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:153:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:155:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:156:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:158:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:159:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:161:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:162:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:164:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:165:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:167:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:168:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:170:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:171:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:173:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:174:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:176:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:177:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:179:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:180:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:182:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:183:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:185:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:186:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:188:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:189:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:191:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:192:20)
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name apskmod apskmod 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod mod_datin 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod modi 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod modq 
+INFO: [HLS 200-1510] Running: set_directive_pipeline apskmod/apskmod_label0 
+INFO: [HLS 200-1510] Running: set_directive_loop_flatten apskmod/apskmod_label1 
+INFO: [HLS 200-1510] Running: set_directive_pipeline apskmod/apskmod_label2 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.463 MB.
+INFO: [HLS 200-10] Analyzing design file 'apskmod.cpp' ... 
+WARNING: [HLS 214-140] Array stream parameter 'mod_datin' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+WARNING: [HLS 214-140] Array stream parameter 'modi' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+WARNING: [HLS 214-140] Array stream parameter 'modq' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.79 seconds. CPU system time: 0.26 seconds. Elapsed time: 0.6 seconds; current allocated memory: 192.720 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'apskmod(float*, float*, float*)' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'mod_datin' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modi' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modq' (apskmod.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.32 seconds. CPU system time: 0.29 seconds. Elapsed time: 4.63 seconds; current allocated memory: 197.396 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 197.397 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 211.794 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 232.253 MB.
+INFO: [XFORM 203-510] Pipelining loop 'apskmod_label1' (apskmod.cpp:16) in function 'apskmod' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.31 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.31 seconds; current allocated memory: 275.278 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempin' (apskmod.cpp:15:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:32:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:33:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:35:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:36:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:38:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:39:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:41:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:42:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:44:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:45:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:47:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:50:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:51:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:53:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:54:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:56:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:57:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:59:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:60:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:62:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:63:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:66:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:68:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:69:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:71:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:72:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:74:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:75:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:77:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:78:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:80:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:81:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:83:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:84:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:86:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:87:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:89:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:90:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:92:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:93:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:95:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:96:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:98:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:99:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:101:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:102:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:104:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:105:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:107:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:108:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:110:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:111:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:113:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:114:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:116:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:117:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:119:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:120:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:122:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:123:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:125:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:126:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:128:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:129:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:131:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:132:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:134:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:135:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:137:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:138:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:140:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:141:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:143:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:144:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:146:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:147:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:149:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:150:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:152:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:153:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:155:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:156:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:158:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:159:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:161:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:162:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:164:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:165:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:167:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:168:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:170:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:171:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:173:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:174:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:176:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:177:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:179:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:180:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:182:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:183:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:185:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:186:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:188:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:189:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:191:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:192:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:194:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:195:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:197:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:198:20)
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name apskmod apskmod 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod mod_datin 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod modi 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod modq 
+INFO: [HLS 200-1510] Running: set_directive_pipeline apskmod/apskmod_label0 
+INFO: [HLS 200-1510] Running: set_directive_loop_flatten apskmod/apskmod_label1 
+INFO: [HLS 200-1510] Running: set_directive_pipeline apskmod/apskmod_label2 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 207.472 MB.
+INFO: [HLS 200-10] Analyzing design file 'apskmod.cpp' ... 
+WARNING: [HLS 214-140] Array stream parameter 'mod_datin' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+WARNING: [HLS 214-140] Array stream parameter 'modi' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+WARNING: [HLS 214-140] Array stream parameter 'modq' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:11
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.87 seconds. CPU system time: 0.23 seconds. Elapsed time: 0.62 seconds; current allocated memory: 208.729 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'apskmod(float*, float*, float*)' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'mod_datin' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modi' (apskmod.cpp:11:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modq' (apskmod.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.28 seconds. CPU system time: 0.25 seconds. Elapsed time: 4.56 seconds; current allocated memory: 213.357 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 213.358 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 227.757 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 248.220 MB.
+INFO: [XFORM 203-510] Pipelining loop 'apskmod_label1' (apskmod.cpp:16) in function 'apskmod' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.29 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.31 seconds; current allocated memory: 291.241 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempin' (apskmod.cpp:15:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:32:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:33:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:35:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:36:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:38:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:39:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:41:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:42:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:44:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:45:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:47:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:50:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:51:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:53:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:54:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:56:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:57:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:59:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:60:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:62:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:63:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:65:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:66:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:68:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:69:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:71:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:72:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:74:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:75:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:77:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:78:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:80:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:81:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:83:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:84:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:86:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:87:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:89:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:90:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:92:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:93:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:95:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:96:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:98:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:99:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:101:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:102:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:104:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:105:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:107:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:108:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:110:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:111:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:113:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:114:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:116:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:117:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:119:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:120:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:122:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:123:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:125:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:126:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:128:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:129:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:131:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:132:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:134:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:135:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:137:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:138:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:140:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:141:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:143:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:144:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:146:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:147:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:149:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:150:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:152:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:153:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:155:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:156:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:158:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:159:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:161:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:162:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:164:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:165:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:167:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:168:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:170:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:171:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:173:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:174:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:176:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:177:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:179:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:180:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:182:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:183:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:185:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:186:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:188:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:189:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:191:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:192:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:194:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:195:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:197:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:198:20)
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu37p-fsvh2892-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu37p-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name apskmod apskmod 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod mod_datin 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod modi 
+INFO: [HLS 200-1510] Running: set_directive_interface -mode axis -register -register_mode both apskmod modq 
+INFO: [HLS 200-1510] Running: set_directive_pipeline apskmod/apskmod_label0 
+INFO: [HLS 200-1510] Running: set_directive_loop_flatten apskmod/apskmod_label1 
+INFO: [HLS 200-1510] Running: set_directive_pipeline apskmod/apskmod_label2 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 207.472 MB.
+INFO: [HLS 200-10] Analyzing design file 'apskmod.cpp' ... 
+WARNING: [HLS 214-140] Array stream parameter 'mod_datin' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:12
+WARNING: [HLS 214-140] Array stream parameter 'modi' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:12
+WARNING: [HLS 214-140] Array stream parameter 'modq' in function 'apskmod' may require the 'volatile' qualifier to prevent the compiler from altering array accesses and/or modifying the desired streaming order: apskmod.cpp:12
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.8 seconds. CPU system time: 0.22 seconds. Elapsed time: 0.59 seconds; current allocated memory: 208.729 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'mod_datin' (apskmod.cpp:12:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modi' (apskmod.cpp:12:0)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'modq' (apskmod.cpp:12:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.15 seconds. CPU system time: 0.23 seconds. Elapsed time: 4.38 seconds; current allocated memory: 213.278 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 213.279 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 215.098 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 214.295 MB.
+INFO: [XFORM 203-510] Pipelining loop 'apskmod_label1' (apskmod.cpp:17) in function 'apskmod' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 235.273 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempin' (apskmod.cpp:16:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:33:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:34:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:36:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:37:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:39:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:40:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:42:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:43:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:45:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:46:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:48:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:49:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:51:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:52:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:54:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:55:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:57:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:58:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:60:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:61:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:63:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:64:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:66:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:67:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:69:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:70:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:72:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:73:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:75:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:76:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:78:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:79:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:81:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:82:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:84:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:85:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:87:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:88:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:90:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:91:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:93:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:94:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:96:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:97:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:99:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:100:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:102:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:103:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:105:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:106:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:108:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:109:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:111:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:112:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:114:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:115:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:117:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:118:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:120:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:121:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:123:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:124:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:126:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:127:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:129:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:130:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:132:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:133:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:135:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:136:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:138:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:139:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:141:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:142:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:144:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:145:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:147:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:148:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:150:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:151:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:153:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:154:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:156:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:157:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:159:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:160:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:162:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:163:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:165:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:166:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:168:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:169:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:171:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:172:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:174:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:175:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:177:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:178:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:180:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:181:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:183:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:184:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:186:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:187:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:189:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:190:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:192:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:193:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:195:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:196:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:198:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:199:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:201:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:202:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:204:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:205:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:207:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:208:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:210:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:211:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:213:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:214:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:216:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:217:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:219:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:220:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:222:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:223:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempouti' (apskmod.cpp:225:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'mod_tempoutq' (apskmod.cpp:226:20)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 233.258 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'apskmod' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'apskmod' 
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

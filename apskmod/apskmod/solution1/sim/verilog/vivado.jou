@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  1 05:02:15 2021
+# Process ID: 213701
+# Current directory: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog
+# Command line: vivado -source open_wave.tcl
+# Log file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/vivado.log
+# Journal file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/apskmod.wcfg
+close_sim

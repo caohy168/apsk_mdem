@@ -1,0 +1,107 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "apskdemod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "apskdemod"
+              }]
+          }
+        },
+        {
+          "functionName": "apskdemod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "demodi"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "apskdemod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "demodq"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "apskdemod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "demod_datout"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "apskdemod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "apskdemod"
+              }]
+          }
+        }
+      ]
+    }]}

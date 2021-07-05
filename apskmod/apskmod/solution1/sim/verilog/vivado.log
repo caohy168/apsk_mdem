@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  1 05:02:15 2021
+# Process ID: 213701
+# Current directory: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog
+# Command line: vivado -source open_wave.tcl
+# Log file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/vivado.log
+# Journal file: /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+# open_wave_database apskmod.wdb
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_apskmod_top/AESL_inst_apskmod/AESL_inst_apskmod_activity
+open_wave_config /home/caohy168/Work/apsk_mdem/apskmod/apskmod/solution1/sim/verilog/apskmod.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  1 05:23:16 2021...

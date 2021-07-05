@@ -1,0 +1,27 @@
+
+
+================================================================
+== Synthesis Summary Report of 'apskmod'
+================================================================
++ General Information: 
+    * Date:           Thu Jul  1 06:06:37 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        apskmod
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu37p-fsvh2892-2L-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+----+----------+------------+-----+
+    |      Modules      | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |         |    |          |            |     |
+    |      & Loops      | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|    FF    |     LUT    | URAM|
+    +-------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+----+----------+------------+-----+
+    |+ apskmod          |     -|  -4.91|     1027|  1.027e+04|         -|     1028|     -|        no|  3 (~0%)|   -|  50 (~0%)|  1138 (~0%)|    -|
+    | o apskmod_label0  |     -|  -7.30|      340|  3.400e+03|         1|        1|   340|       yes|        -|   -|         -|           -|    -|
+    | o apskmod_label1  |     -|  -7.30|      340|  3.400e+03|         2|        1|   340|       yes|        -|   -|         -|           -|    -|
+    | o apskmod_label2  |     -|  -7.30|      341|  3.410e+03|         3|        1|   340|       yes|        -|   -|         -|           -|    -|
+    +-------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+----+----------+------------+-----+
+

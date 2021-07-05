@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="apskdemod.cpp" path="/home/caohy168/Work/apsk_mdem/apskdemod/apskdemod.cpp"/>
+    <originFiles name="apskdemod.h" path="/home/caohy168/Work/apsk_mdem/apskdemod/apskdemod.h"/>
+  </source>
+  <testbench>
+    <originFiles name="apskdemod_inspire.cpp" path="/home/caohy168/Work/apsk_mdem/apskdemod/apskdemod_inspire.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

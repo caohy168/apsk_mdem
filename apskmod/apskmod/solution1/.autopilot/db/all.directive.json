@@ -1,0 +1,125 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "apskmod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "apskmod"
+              }]
+          }
+        },
+        {
+          "functionName": "apskmod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "mod_datin"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "apskmod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "modi"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "apskmod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "modq"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "apskmod",
+          "label": "apskmod_label0",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "apskmod",
+          "label": "apskmod_label1",
+          "functionLabel": "",
+          "pragma": {"name": "LOOP_FLATTEN"}
+        },
+        {
+          "functionName": "apskmod",
+          "label": "apskmod_label2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "apskmod",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "apskmod"
+              }]
+          }
+        }
+      ]
+    }]}

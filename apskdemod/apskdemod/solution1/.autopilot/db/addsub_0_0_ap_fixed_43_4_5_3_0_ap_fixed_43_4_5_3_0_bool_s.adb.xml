@@ -1,0 +1,210 @@
+<stg><name>addsub<0, 0, ap_fixed<43, 4, 5, 3, 0>, ap_fixed<43, 4, 5, 3, 0>, bool></name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:0 %add_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %add
+
+]]></Node>
+<StgValue><ssdm name="add_read"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="42" op_0_bw="42" op_1_bw="42">
+<![CDATA[
+:1 %b_read = read i42 @_ssdm_op_Read.ap_auto.i42, i42 %b
+
+]]></Node>
+<StgValue><ssdm name="b_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="43" op_0_bw="43" op_1_bw="43">
+<![CDATA[
+:2 %a_read = read i43 @_ssdm_op_Read.ap_auto.i43, i43 %a
+
+]]></Node>
+<StgValue><ssdm name="a_read"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="0">
+<![CDATA[
+:3 %speclatency_ln118 = speclatency void @_ssdm_op_SpecLatency, i64 0, i64 0, void @empty_3
+
+]]></Node>
+<StgValue><ssdm name="speclatency_ln118"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="43" op_0_bw="42">
+<![CDATA[
+:4 %sext_ln1147 = sext i42 %b_read
+
+]]></Node>
+<StgValue><ssdm name="sext_ln1147"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>Adder</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="add_read" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="43" op_0_bw="43" op_1_bw="43">
+<![CDATA[
+:5 %ret_V = sub i43 %a_read, i43 %sext_ln1147
+
+]]></Node>
+<StgValue><ssdm name="ret_V"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>Adder</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="add_read" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="43" op_0_bw="43" op_1_bw="43">
+<![CDATA[
+:6 %ret_V_36 = add i43 %sext_ln1147, i43 %a_read
+
+]]></Node>
+<StgValue><ssdm name="ret_V_36"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="43" op_0_bw="1" op_1_bw="43" op_2_bw="43">
+<![CDATA[
+:7 %ret_V_38 = select i1 %add_read, i43 %ret_V_36, i43 %ret_V
+
+]]></Node>
+<StgValue><ssdm name="ret_V_38"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="0" op_0_bw="43">
+<![CDATA[
+:8 %ret_ln135 = ret i43 %ret_V_38
+
+]]></Node>
+<StgValue><ssdm name="ret_ln135"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="12" name="a" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="a"/></StgValue>
+</port>
+<port id="13" name="b" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="b"/></StgValue>
+</port>
+<port id="14" name="add" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="add"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="16" from="_ssdm_op_Read.ap_auto.i1" to="add_read" fromId="15" toId="2">
+</dataflow>
+<dataflow id="17" from="add" to="add_read" fromId="14" toId="2">
+</dataflow>
+<dataflow id="19" from="_ssdm_op_Read.ap_auto.i42" to="b_read" fromId="18" toId="3">
+</dataflow>
+<dataflow id="20" from="b" to="b_read" fromId="13" toId="3">
+</dataflow>
+<dataflow id="22" from="_ssdm_op_Read.ap_auto.i43" to="a_read" fromId="21" toId="4">
+</dataflow>
+<dataflow id="23" from="a" to="a_read" fromId="12" toId="4">
+</dataflow>
+<dataflow id="25" from="_ssdm_op_SpecLatency" to="speclatency_ln118" fromId="24" toId="5">
+</dataflow>
+<dataflow id="27" from="StgValue_26" to="speclatency_ln118" fromId="26" toId="5">
+</dataflow>
+<dataflow id="28" from="StgValue_26" to="speclatency_ln118" fromId="26" toId="5">
+</dataflow>
+<dataflow id="30" from="empty_3" to="speclatency_ln118" fromId="29" toId="5">
+</dataflow>
+<dataflow id="31" from="b_read" to="sext_ln1147" fromId="3" toId="6">
+</dataflow>
+<dataflow id="32" from="a_read" to="ret_V" fromId="4" toId="7">
+</dataflow>
+<dataflow id="33" from="sext_ln1147" to="ret_V" fromId="6" toId="7">
+</dataflow>
+<dataflow id="34" from="sext_ln1147" to="ret_V_36" fromId="6" toId="8">
+</dataflow>
+<dataflow id="35" from="a_read" to="ret_V_36" fromId="4" toId="8">
+</dataflow>
+<dataflow id="36" from="add_read" to="ret_V_38" fromId="2" toId="9">
+</dataflow>
+<dataflow id="37" from="ret_V_36" to="ret_V_38" fromId="8" toId="9">
+</dataflow>
+<dataflow id="38" from="ret_V" to="ret_V_38" fromId="7" toId="9">
+</dataflow>
+<dataflow id="39" from="ret_V_38" to="ret_ln135" fromId="9" toId="10">
+</dataflow>
+<dataflow id="40" from="add_read" to="StgValue_1" fromId="2" toId="1">
+</dataflow>
+</dataflows>
+
+
+</stg>

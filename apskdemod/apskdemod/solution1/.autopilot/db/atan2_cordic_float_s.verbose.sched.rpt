@@ -1,0 +1,380 @@
+
+
+================================================================
+== Vitis HLS Report for 'atan2_cordic_float_s'
+================================================================
+* Date:           Sun Jul  4 23:20:01 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+* Project:        apskdemod
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu37p-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.164 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       17|       17|  0.170 us|  0.170 us|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 18
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 18
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 18, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.99>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%x_in_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %x_in" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:754]   --->   Operation 19 'read' 'x_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%y_in_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %y_in" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:754]   --->   Operation 20 'read' 'y_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%data_V = bitcast i32 %x_in_read" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:312]   --->   Operation 21 'bitcast' 'data_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_Result_s = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %data_V, i32 31"   --->   Operation 22 'bitselect' 'p_Result_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%tmp = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %data_V, i32 23, i32 30"   --->   Operation 23 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_78 = trunc i32 %data_V"   --->   Operation 24 'trunc' 'tmp_78' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%data_V_2 = bitcast i32 %y_in_read" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:312]   --->   Operation 25 'bitcast' 'data_V_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%p_Result_31 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %data_V_2, i32 31"   --->   Operation 26 'bitselect' 'p_Result_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%tmp_79 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %data_V_2, i32 23, i32 30"   --->   Operation 27 'partselect' 'tmp_79' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_80 = trunc i32 %data_V_2"   --->   Operation 28 'trunc' 'tmp_80' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.58ns)   --->   "%icmp_ln757 = icmp_eq  i8 %tmp_79, i8 255" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:757]   --->   Operation 29 'icmp' 'icmp_ln757' <Predicate = true> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node or_ln757)   --->   "%xor_ln18 = xor i1 %icmp_ln757, i1 1" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:18]   --->   Operation 30 'xor' 'xor_ln18' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.75ns)   --->   "%icmp_ln828 = icmp_eq  i23 %tmp_80, i23 0"   --->   Operation 31 'icmp' 'icmp_ln828' <Predicate = true> <Delay = 0.75> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.12ns) (out node of the LUT)   --->   "%or_ln757 = or i1 %icmp_ln828, i1 %xor_ln18" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:757]   --->   Operation 32 'or' 'or_ln757' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.67ns)   --->   "%br_ln18 = br i1 %or_ln757, void %UnifiedReturnBlock, void %.critedge384" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:18]   --->   Operation 33 'br' 'br_ln18' <Predicate = true> <Delay = 0.67>
+ST_1 : Operation 34 [1/1] (0.58ns)   --->   "%icmp_ln757_1 = icmp_eq  i8 %tmp, i8 255" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:757]   --->   Operation 34 'icmp' 'icmp_ln757_1' <Predicate = (or_ln757)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node or_ln757_1)   --->   "%xor_ln18_1 = xor i1 %icmp_ln757_1, i1 1" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:18]   --->   Operation 35 'xor' 'xor_ln18_1' <Predicate = (or_ln757)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.75ns)   --->   "%icmp_ln828_1 = icmp_eq  i23 %tmp_78, i23 0"   --->   Operation 36 'icmp' 'icmp_ln828_1' <Predicate = (or_ln757)> <Delay = 0.75> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.12ns) (out node of the LUT)   --->   "%or_ln757_1 = or i1 %icmp_ln828_1, i1 %xor_ln18_1" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:757]   --->   Operation 37 'or' 'or_ln757_1' <Predicate = (or_ln757)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (0.67ns)   --->   "%br_ln18 = br i1 %or_ln757_1, void %UnifiedReturnBlock, void %.critedge385" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:18]   --->   Operation 38 'br' 'br_ln18' <Predicate = (or_ln757)> <Delay = 0.67>
+ST_1 : Operation 39 [1/1] (0.58ns)   --->   "%icmp_ln824 = icmp_eq  i8 %tmp_79, i8 0"   --->   Operation 39 'icmp' 'icmp_ln824' <Predicate = (or_ln757 & or_ln757_1)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln762 = br i1 %icmp_ln824, void %.critedge, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:762]   --->   Operation 40 'br' 'br_ln762' <Predicate = (or_ln757 & or_ln757_1)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.12ns)   --->   "%and_ln762 = and i1 %icmp_ln828, i1 %p_Result_s" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:762]   --->   Operation 41 'and' 'and_ln762' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln762 = br i1 %and_ln762, void, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:762]   --->   Operation 42 'br' 'br_ln762' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln764 = br i1 %icmp_ln828, void %.critedge, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:764]   --->   Operation 43 'br' 'br_ln764' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762)> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.58ns)   --->   "%icmp_ln824_2 = icmp_eq  i8 %tmp, i8 0"   --->   Operation 44 'icmp' 'icmp_ln824_2' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828) | (or_ln757 & or_ln757_1 & !icmp_ln824)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln766)   --->   "%trunc_ln766 = trunc i32 %data_V" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:766]   --->   Operation 45 'trunc' 'trunc_ln766' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828) | (or_ln757 & or_ln757_1 & !icmp_ln824)> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln766)   --->   "%or_ln766 = or i8 %trunc_ln766, i8 %tmp" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:766]   --->   Operation 46 'or' 'or_ln766' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828) | (or_ln757 & or_ln757_1 & !icmp_ln824)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln766)   --->   "%tmp_3 = partselect i15 @_ssdm_op_PartSelect.i15.i32.i32.i32, i32 %data_V, i32 8, i32 22" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:766]   --->   Operation 47 'partselect' 'tmp_3' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828) | (or_ln757 & or_ln757_1 & !icmp_ln824)> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln766)   --->   "%tmp_4 = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %tmp_3, i8 %or_ln766" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:766]   --->   Operation 48 'bitconcatenate' 'tmp_4' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828) | (or_ln757 & or_ln757_1 & !icmp_ln824)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.75ns) (out node of the LUT)   --->   "%icmp_ln766 = icmp_eq  i23 %tmp_4, i23 0" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:766]   --->   Operation 49 'icmp' 'icmp_ln766' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828) | (or_ln757 & or_ln757_1 & !icmp_ln824)> <Delay = 0.75> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln766 = br i1 %icmp_ln766, void %.critedge262, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:766]   --->   Operation 50 'br' 'br_ln766' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828) | (or_ln757 & or_ln757_1 & !icmp_ln824)> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%br_ln771 = br i1 %icmp_ln824, void %.critedge264, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:771]   --->   Operation 51 'br' 'br_ln771' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828 & !icmp_ln766) | (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766)> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln776 = br i1 %icmp_ln824_2, void %_Z13generic_isinfIfEiT_.exit, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:776]   --->   Operation 52 'br' 'br_ln776' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766)> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.12ns)   --->   "%and_ln18 = and i1 %icmp_ln757_1, i1 %icmp_ln828_1" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:18]   --->   Operation 53 'and' 'and_ln18' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 54 [1/1] (0.12ns)   --->   "%and_ln18_1 = and i1 %icmp_ln757, i1 %icmp_ln828" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:18]   --->   Operation 54 'and' 'and_ln18_1' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%br_ln794 = br i1 %and_ln18, void %.critedge266, void %_Z13generic_isinfIfEiT_.exit334" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:794]   --->   Operation 55 'br' 'br_ln794' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2)> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln808 = br i1 %and_ln18_1, void, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:808]   --->   Operation 56 'br' 'br_ln808' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18)> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%p_Result_38 = trunc i32 %data_V_2"   --->   Operation 57 'trunc' 'p_Result_38' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%zext_ln368 = zext i31 %p_Result_38"   --->   Operation 58 'zext' 'zext_ln368' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%a = bitcast i32 %zext_ln368" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351]   --->   Operation 59 'bitcast' 'a' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%p_Result_39 = trunc i32 %data_V"   --->   Operation 60 'trunc' 'p_Result_39' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln368_1 = zext i31 %p_Result_39"   --->   Operation 61 'zext' 'zext_ln368_1' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%b = bitcast i32 %zext_ln368_1" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351]   --->   Operation 62 'bitcast' 'b' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%p_Result_40 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 0, i31 %p_Result_39"   --->   Operation 63 'bitconcatenate' 'p_Result_40' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%p_Result_41 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 0, i31 %p_Result_38"   --->   Operation 64 'bitconcatenate' 'p_Result_41' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.85ns)   --->   "%icmp_ln824_3 = icmp_eq  i32 %p_Result_40, i32 %p_Result_41"   --->   Operation 65 'icmp' 'icmp_ln824_3' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 66 [1/1] (0.41ns)   --->   "%br_ln744 = br i1 %icmp_ln824_3, void, void %atan2_cordic_Q1<float>.exit" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:744->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 66 'br' 'br_ln744' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.41>
+ST_1 : Operation 67 [1/1] (0.58ns)   --->   "%icmp_ln746 = icmp_ne  i8 %tmp_79, i8 255" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 67 'icmp' 'icmp_ln746' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 68 [1/1] (0.00ns) (grouped into LUT with out node and_ln746_1)   --->   "%or_ln746 = or i1 %icmp_ln828, i1 %icmp_ln746" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 68 'or' 'or_ln746' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 69 [1/1] (0.58ns)   --->   "%icmp_ln746_1 = icmp_ne  i8 %tmp, i8 255" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 69 'icmp' 'icmp_ln746_1' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3)> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 70 [1/1] (0.00ns) (grouped into LUT with out node and_ln746_1)   --->   "%or_ln746_1 = or i1 %icmp_ln828_1, i1 %icmp_ln746_1" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 70 'or' 'or_ln746_1' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 71 [1/1] (0.00ns) (grouped into LUT with out node and_ln746_1)   --->   "%and_ln746 = and i1 %or_ln746, i1 %or_ln746_1" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 71 'and' 'and_ln746' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 72 [1/1] (6.87ns)   --->   "%tmp_10 = fcmp_ogt  i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 72 'fcmp' 'tmp_10' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3)> <Delay = 6.87> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 0> <II = 1> <Delay = 6.87> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 73 [1/1] (0.12ns) (out node of the LUT)   --->   "%and_ln746_1 = and i1 %and_ln746, i1 %tmp_10" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 73 'and' 'and_ln746_1' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3)> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%br_ln746 = br i1 %and_ln746_1, void, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 74 'br' 'br_ln746' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3)> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln794 = br i1 %and_ln18_1, void, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:794]   --->   Operation 75 'br' 'br_ln794' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & and_ln18)> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln772 = br i1 %p_Result_s, void %.critedge263, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:772]   --->   Operation 76 'br' 'br_ln772' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & !icmp_ln828 & !icmp_ln766)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.06>
+ST_2 : Operation 77 [11/11] (7.06ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 77 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 78 [11/11] (7.06ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 78 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 7.16>
+ST_3 : Operation 79 [10/11] (7.16ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 79 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 80 [10/11] (7.16ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 80 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 7.16>
+ST_4 : Operation 81 [9/11] (7.16ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 81 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 82 [9/11] (7.16ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 82 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 7.16>
+ST_5 : Operation 83 [8/11] (7.16ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 83 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 84 [8/11] (7.16ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 84 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 7.16>
+ST_6 : Operation 85 [7/11] (7.16ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 85 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 86 [7/11] (7.16ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 86 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 7.16>
+ST_7 : Operation 87 [6/11] (7.16ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 87 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 88 [6/11] (7.16ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 88 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 7.16>
+ST_8 : Operation 89 [5/11] (7.16ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 89 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 90 [5/11] (7.16ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 90 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 7.16>
+ST_9 : Operation 91 [4/11] (7.16ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 91 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 92 [4/11] (7.16ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 92 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 7.16>
+ST_10 : Operation 93 [3/11] (7.16ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 93 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 94 [3/11] (7.16ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 94 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 7.16>
+ST_11 : Operation 95 [2/11] (7.16ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 95 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 96 [2/11] (7.16ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 96 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 7.02>
+ST_12 : Operation 97 [1/11] (7.02ns)   --->   "%tmp_i_71 = call i32 @atan2_generic<float>, i32 %a, i32 %b" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 97 'call' 'tmp_i_71' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 7.02> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 98 [1/11] (7.02ns)   --->   "%tmp_i = call i32 @atan2_generic<float>, i32 %b, i32 %a" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 98 'call' 'tmp_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 7.02> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 6.14>
+ST_13 : Operation 99 [1/1] (0.41ns)   --->   "%br_ln749 = br void %atan2_cordic_Q1<float>.exit" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 99 'br' 'br_ln749' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & !and_ln746_1)> <Delay = 0.41>
+ST_13 : Operation 100 [3/3] (6.14ns)   --->   "%sub_i = fsub i32 1.5708, i32 %tmp_i" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 100 'fsub' 'sub_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 6.14>
+ST_14 : Operation 101 [2/3] (6.14ns)   --->   "%sub_i = fsub i32 1.5708, i32 %tmp_i" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 101 'fsub' 'sub_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 6.14>
+ST_15 : Operation 102 [1/3] (6.14ns)   --->   "%sub_i = fsub i32 1.5708, i32 %tmp_i" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 102 'fsub' 'sub_i' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 103 [1/1] (0.41ns)   --->   "%br_ln747 = br void %atan2_cordic_Q1<float>.exit" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 103 'br' 'br_ln747' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & !icmp_ln824_3 & and_ln746_1)> <Delay = 0.41>
+
+State 16 <SV = 15> <Delay = 6.14>
+ST_16 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_5 = bitconcatenate i2 @_ssdm_op_BitConcatenate.i2.i1.i1, i1 %p_Result_s, i1 %p_Result_31" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:779]   --->   Operation 104 'bitconcatenate' 'tmp_5' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2)> <Delay = 0.00>
+ST_16 : Operation 105 [1/1] (0.00ns)   --->   "%c = phi i32 %sub_i, void, i32 %tmp_i_71, void, i32 0.785398, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816]   --->   Operation 105 'phi' 'c' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.00>
+ST_16 : Operation 106 [3/3] (6.14ns)   --->   "%d = fsub i32 3.14159, i32 %c" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:817]   --->   Operation 106 'fsub' 'd' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 107 [1/1] (0.67ns)   --->   "%switch_ln818 = switch i2 %tmp_5, void %UnifiedReturnBlock, i2 3, void, i2 1, void, i2 2, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:818]   --->   Operation 107 'switch' 'switch_ln818' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 0.67>
+ST_16 : Operation 108 [1/1] (0.67ns)   --->   "%switch_ln802 = switch i2 %tmp_5, void %UnifiedReturnBlock, i2 3, void, i2 1, void, i2 2, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:802]   --->   Operation 108 'switch' 'switch_ln802' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & and_ln18 & !and_ln18_1)> <Delay = 0.67>
+ST_16 : Operation 109 [1/1] (0.67ns)   --->   "%br_ln805 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:805]   --->   Operation 109 'br' 'br_ln805' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & and_ln18 & !and_ln18_1 & tmp_5 == 2)> <Delay = 0.67>
+ST_16 : Operation 110 [1/1] (0.67ns)   --->   "%br_ln804 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:804]   --->   Operation 110 'br' 'br_ln804' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & and_ln18 & !and_ln18_1 & tmp_5 == 1)> <Delay = 0.67>
+ST_16 : Operation 111 [1/1] (0.67ns)   --->   "%br_ln806 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:806]   --->   Operation 111 'br' 'br_ln806' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & and_ln18 & !and_ln18_1 & tmp_5 == 3)> <Delay = 0.67>
+ST_16 : Operation 112 [1/1] (0.67ns)   --->   "%switch_ln795 = switch i2 %tmp_5, void %UnifiedReturnBlock, i2 3, void, i2 1, void, i2 2, void" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:795]   --->   Operation 112 'switch' 'switch_ln795' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & and_ln18 & and_ln18_1)> <Delay = 0.67>
+ST_16 : Operation 113 [1/1] (0.67ns)   --->   "%br_ln798 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:798]   --->   Operation 113 'br' 'br_ln798' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & and_ln18 & and_ln18_1 & tmp_5 == 2)> <Delay = 0.67>
+ST_16 : Operation 114 [1/1] (0.67ns)   --->   "%br_ln797 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:797]   --->   Operation 114 'br' 'br_ln797' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & and_ln18 & and_ln18_1 & tmp_5 == 1)> <Delay = 0.67>
+ST_16 : Operation 115 [1/1] (0.67ns)   --->   "%br_ln799 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:799]   --->   Operation 115 'br' 'br_ln799' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & and_ln18 & and_ln18_1 & tmp_5 == 3)> <Delay = 0.67>
+
+State 17 <SV = 16> <Delay = 6.14>
+ST_17 : Operation 116 [2/3] (6.14ns)   --->   "%d = fsub i32 3.14159, i32 %c" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:817]   --->   Operation 116 'fsub' 'd' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 117 [1/1] (0.00ns)   --->   "%bitcast_ln822 = bitcast i32 %c" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:822]   --->   Operation 117 'bitcast' 'bitcast_ln822' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & tmp_5 == 1)> <Delay = 0.00>
+ST_17 : Operation 118 [1/1] (0.21ns)   --->   "%xor_ln822 = xor i32 %bitcast_ln822, i32 2147483648" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:822]   --->   Operation 118 'xor' 'xor_ln822' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & tmp_5 == 1)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 119 [1/1] (0.00ns)   --->   "%bitcast_ln822_1 = bitcast i32 %xor_ln822" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:822]   --->   Operation 119 'bitcast' 'bitcast_ln822_1' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & tmp_5 == 1)> <Delay = 0.00>
+ST_17 : Operation 120 [1/1] (0.67ns)   --->   "%br_ln822 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:822]   --->   Operation 120 'br' 'br_ln822' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & tmp_5 == 1)> <Delay = 0.67>
+ST_17 : Operation 121 [1/1] (0.22ns)   --->   "%select_ln809 = select i1 %p_Result_31, i32 -1.5708, i32 1.5708" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:809]   --->   Operation 121 'select' 'select_ln809' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & and_ln18_1)> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_17 : Operation 122 [1/1] (0.67ns)   --->   "%br_ln830 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:830]   --->   Operation 122 'br' 'br_ln830' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & and_ln18_1)> <Delay = 0.67>
+ST_17 : Operation 123 [1/1] (0.00ns)   --->   "%p_Result_37 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 %p_Result_31, i31 1070141403"   --->   Operation 123 'bitconcatenate' 'p_Result_37' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & icmp_ln824_2)> <Delay = 0.00>
+ST_17 : Operation 124 [1/1] (0.00ns)   --->   "%bitcast_ln351_5 = bitcast i32 %p_Result_37" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351]   --->   Operation 124 'bitcast' 'bitcast_ln351_5' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & icmp_ln824_2)> <Delay = 0.00>
+ST_17 : Operation 125 [1/1] (0.67ns)   --->   "%br_ln777 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:777]   --->   Operation 125 'br' 'br_ln777' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & icmp_ln824_2)> <Delay = 0.67>
+ST_17 : Operation 126 [1/1] (0.00ns)   --->   "%p_Result_36 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 %p_Result_31, i31 0"   --->   Operation 126 'bitconcatenate' 'p_Result_36' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & !icmp_ln828 & !icmp_ln766 & !p_Result_s)> <Delay = 0.00>
+ST_17 : Operation 127 [1/1] (0.00ns)   --->   "%bitcast_ln351_4 = bitcast i32 %p_Result_36" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351]   --->   Operation 127 'bitcast' 'bitcast_ln351_4' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & !icmp_ln828 & !icmp_ln766 & !p_Result_s)> <Delay = 0.00>
+ST_17 : Operation 128 [1/1] (0.67ns)   --->   "%br_ln775 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:775]   --->   Operation 128 'br' 'br_ln775' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & !icmp_ln828 & !icmp_ln766 & !p_Result_s)> <Delay = 0.67>
+ST_17 : Operation 129 [1/1] (0.00ns)   --->   "%p_Result_35 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 %p_Result_31, i31 1078530011"   --->   Operation 129 'bitconcatenate' 'p_Result_35' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & !icmp_ln828 & !icmp_ln766 & p_Result_s)> <Delay = 0.00>
+ST_17 : Operation 130 [1/1] (0.00ns)   --->   "%bitcast_ln351_3 = bitcast i32 %p_Result_35" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351]   --->   Operation 130 'bitcast' 'bitcast_ln351_3' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & !icmp_ln828 & !icmp_ln766 & p_Result_s)> <Delay = 0.00>
+ST_17 : Operation 131 [1/1] (0.67ns)   --->   "%br_ln773 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:773]   --->   Operation 131 'br' 'br_ln773' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & !icmp_ln828 & !icmp_ln766 & p_Result_s)> <Delay = 0.67>
+ST_17 : Operation 132 [1/1] (0.00ns)   --->   "%p_Result_34 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 %p_Result_31, i31 1070141403"   --->   Operation 132 'bitconcatenate' 'p_Result_34' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828 & icmp_ln766) | (or_ln757 & or_ln757_1 & !icmp_ln824 & icmp_ln766)> <Delay = 0.00>
+ST_17 : Operation 133 [1/1] (0.00ns)   --->   "%bitcast_ln351_2 = bitcast i32 %p_Result_34" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351]   --->   Operation 133 'bitcast' 'bitcast_ln351_2' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828 & icmp_ln766) | (or_ln757 & or_ln757_1 & !icmp_ln824 & icmp_ln766)> <Delay = 0.00>
+ST_17 : Operation 134 [1/1] (0.67ns)   --->   "%br_ln767 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:767]   --->   Operation 134 'br' 'br_ln767' <Predicate = (or_ln757 & or_ln757_1 & !and_ln762 & !icmp_ln828 & icmp_ln766) | (or_ln757 & or_ln757_1 & !icmp_ln824 & icmp_ln766)> <Delay = 0.67>
+ST_17 : Operation 135 [1/1] (0.00ns)   --->   "%p_Result_33 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 %p_Result_31, i31 0"   --->   Operation 135 'bitconcatenate' 'p_Result_33' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & icmp_ln828)> <Delay = 0.00>
+ST_17 : Operation 136 [1/1] (0.00ns)   --->   "%bitcast_ln351_1 = bitcast i32 %p_Result_33" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351]   --->   Operation 136 'bitcast' 'bitcast_ln351_1' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & icmp_ln828)> <Delay = 0.00>
+ST_17 : Operation 137 [1/1] (0.67ns)   --->   "%br_ln765 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:765]   --->   Operation 137 'br' 'br_ln765' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & !and_ln762 & icmp_ln828)> <Delay = 0.67>
+ST_17 : Operation 138 [1/1] (0.00ns)   --->   "%p_Result_32 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i31, i1 %p_Result_31, i31 1078530011"   --->   Operation 138 'bitconcatenate' 'p_Result_32' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & and_ln762)> <Delay = 0.00>
+ST_17 : Operation 139 [1/1] (0.00ns)   --->   "%bitcast_ln351 = bitcast i32 %p_Result_32" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351]   --->   Operation 139 'bitcast' 'bitcast_ln351' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & and_ln762)> <Delay = 0.00>
+ST_17 : Operation 140 [1/1] (0.67ns)   --->   "%br_ln763 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:763]   --->   Operation 140 'br' 'br_ln763' <Predicate = (or_ln757 & or_ln757_1 & icmp_ln824 & and_ln762)> <Delay = 0.67>
+
+State 18 <SV = 17> <Delay = 7.03>
+ST_18 : Operation 141 [1/3] (6.14ns)   --->   "%d = fsub i32 3.14159, i32 %c" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:817]   --->   Operation 141 'fsub' 'd' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1)> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 142 [1/1] (0.67ns)   --->   "%br_ln824 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:824]   --->   Operation 142 'br' 'br_ln824' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & tmp_5 == 2)> <Delay = 0.67>
+ST_18 : Operation 143 [1/1] (0.00ns)   --->   "%bitcast_ln826 = bitcast i32 %d" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:826]   --->   Operation 143 'bitcast' 'bitcast_ln826' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & tmp_5 == 3)> <Delay = 0.00>
+ST_18 : Operation 144 [1/1] (0.21ns)   --->   "%xor_ln826 = xor i32 %bitcast_ln826, i32 2147483648" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:826]   --->   Operation 144 'xor' 'xor_ln826' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & tmp_5 == 3)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 145 [1/1] (0.00ns)   --->   "%bitcast_ln826_1 = bitcast i32 %xor_ln826" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:826]   --->   Operation 145 'bitcast' 'bitcast_ln826_1' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & tmp_5 == 3)> <Delay = 0.00>
+ST_18 : Operation 146 [1/1] (0.67ns)   --->   "%br_ln826 = br void %UnifiedReturnBlock" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:826]   --->   Operation 146 'br' 'br_ln826' <Predicate = (or_ln757 & or_ln757_1 & !icmp_ln824 & !icmp_ln766 & !icmp_ln824_2 & !and_ln18 & !and_ln18_1 & tmp_5 == 3)> <Delay = 0.67>
+ST_18 : Operation 147 [1/1] (0.00ns)   --->   "%UnifiedRetVal = phi i32 %select_ln809, void, i32 %bitcast_ln351, void, i32 %bitcast_ln351_1, void, i32 %bitcast_ln351_2, void, i32 %bitcast_ln351_3, void, i32 %bitcast_ln351_4, void %.critedge263, i32 %bitcast_ln351_5, void, i32 -2.35619, void, i32 2.35619, void, i32 -0.785398, void, i32 -3.14159, void, i32 3.14159, void, i32 -0, void, i32 %bitcast_ln826_1, void, i32 %d, void, i32 %bitcast_ln822_1, void, i32 nan, void, i32 nan, void %.critedge384, i32 %c, void %atan2_cordic_Q1<float>.exit, i32 0.785398, void, i32 0, void"   --->   Operation 147 'phi' 'UnifiedRetVal' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 148 [1/1] (0.00ns)   --->   "%ret_ln830 = ret i32 %UnifiedRetVal" [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:830]   --->   Operation 148 'ret' 'ret_ln830' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 6.99ns
+The critical path consists of the following:
+	wire read on port 'x_in' (/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:754) [3]  (0 ns)
+	'fcmp' operation ('tmp_10', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) [68]  (6.87 ns)
+	'and' operation ('and_ln746_1', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:746->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) [69]  (0.122 ns)
+
+ <State 2>: 7.07ns
+The critical path consists of the following:
+	'call' operation ('tmp_i', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [75]  (7.07 ns)
+
+ <State 3>: 7.16ns
+The critical path consists of the following:
+	'call' operation ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [72]  (7.16 ns)
+
+ <State 4>: 7.16ns
+The critical path consists of the following:
+	'call' operation ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [72]  (7.16 ns)
+
+ <State 5>: 7.16ns
+The critical path consists of the following:
+	'call' operation ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [72]  (7.16 ns)
+
+ <State 6>: 7.16ns
+The critical path consists of the following:
+	'call' operation ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [72]  (7.16 ns)
+
+ <State 7>: 7.16ns
+The critical path consists of the following:
+	'call' operation ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [72]  (7.16 ns)
+
+ <State 8>: 7.16ns
+The critical path consists of the following:
+	'call' operation ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [72]  (7.16 ns)
+
+ <State 9>: 7.16ns
+The critical path consists of the following:
+	'call' operation ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [72]  (7.16 ns)
+
+ <State 10>: 7.16ns
+The critical path consists of the following:
+	'call' operation ('tmp_i', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [75]  (7.16 ns)
+
+ <State 11>: 7.16ns
+The critical path consists of the following:
+	'call' operation ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [72]  (7.16 ns)
+
+ <State 12>: 7.02ns
+The critical path consists of the following:
+	'call' operation ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) to 'atan2_generic<float>' [72]  (7.02 ns)
+
+ <State 13>: 6.15ns
+The critical path consists of the following:
+	'fsub' operation ('sub_i', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) [76]  (6.15 ns)
+
+ <State 14>: 6.15ns
+The critical path consists of the following:
+	'fsub' operation ('sub_i', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) [76]  (6.15 ns)
+
+ <State 15>: 6.15ns
+The critical path consists of the following:
+	'fsub' operation ('sub_i', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) [76]  (6.15 ns)
+
+ <State 16>: 6.15ns
+The critical path consists of the following:
+	'phi' operation ('c', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) with incoming values : ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) ('sub_i', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) [79]  (0 ns)
+	'fsub' operation ('d', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:817) [80]  (6.15 ns)
+
+ <State 17>: 6.15ns
+The critical path consists of the following:
+	'fsub' operation ('d', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:817) [80]  (6.15 ns)
+
+ <State 18>: 7.03ns
+The critical path consists of the following:
+	'fsub' operation ('d', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:817) [80]  (6.15 ns)
+	'xor' operation ('xor_ln826', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:826) [91]  (0.21 ns)
+	multiplexor before 'phi' operation ('c') with incoming values : ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) ('sub_i', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) ('d', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:817) ('bitcast_ln822_1', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:822) ('bitcast_ln826_1', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:826) ('select_ln809', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:809) ('bitcast_ln351_5', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351_4', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351_3', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351_2', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351_1', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) [142]  (0.673 ns)
+	'phi' operation ('c') with incoming values : ('tmp_i_71', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:749->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) ('sub_i', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:747->/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:816) ('d', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:817) ('bitcast_ln822_1', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:822) ('bitcast_ln826_1', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:826) ('select_ln809', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_cordic.h:809) ('bitcast_ln351_5', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351_4', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351_3', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351_2', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351_1', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) ('bitcast_ln351', /wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:351) [142]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
